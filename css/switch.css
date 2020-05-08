@@ -1,0 +1,10 @@
+.invisible{
+  display: none;
+  transition: ease .3s;
+}
+
+.visible{
+  display: block;
+  transition: ease .3s;
+}
+

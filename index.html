@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日のご飯診断</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    window.addEventListener('load', function() {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("/serviceWorker.js");
+        }
+    });
+</script>
+  <link rel=”icon” href=“https://restaurant-suggest.web.app/favicon.ico”>
+</head>
+<body>
+  <header>
+  <ul class="menu-bar" id="menu-btn">
+    <li class="bar top"></li>
+    <li class="bar mid"></li>
+    <li class="bar bot"></li>
+  </ul>
+
+    <div class="header-container">
+       <h1 aria-label="今日のご飯診断"><a href="index.html"><img src="img/logomoji.png" alt="今日のご飯診断" width="90px"></a></h1>
+
+
+      <nav>
+        <ul>
+          <li><a href="test.html">今日のご飯を診断で決める</a></li>
+          <li><a href="meshiSearch.html">近くのお店を検索</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    
+    <div class="black-cover" id="cover"></div>
+  </header>
+  <main>
+    <section class="first-view">
+      <div class="first-view-wrapper">
+        <img src="img/first-view.jpg" alt="first-view">
+        <div class="main-container">
+          <div class="select test"><a href="test.html">今日のご飯を診断で決める</a></div>
+          <div class="select search"><a href="meshiSearch.html">近くのお店を検索する</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script src="js/main.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

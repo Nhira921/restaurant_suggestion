@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日のご飯診断||テスト</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/switch.css">
+</head>
+<body>
+  <header>
+    <ul class="menu-bar" id="menu-btn">
+      <li class="bar top"></li>
+      <li class="bar mid"></li>
+      <li class="bar bot"></li>
+    </ul>
+  
+    
+      <div class="header-container">
+        <div class="logo">
+          <h1 aria-label="今日のご飯診断"><a href="index.html"><img src="img/logomoji.png" alt="今日のご飯診断" width="90px"></a></h1>
+        </div>
+  
+  
+        <nav>
+          <ul>
+            <li><a href="test.html">今日のご飯を診断で決める</a></li>
+            <li><a href="meshiSearch.html">近くのお店を検索</a></li>
+          </ul>
+        </nav>
+  
+      </div>
+      
+      <div class="black-cover" id="cover"></div>
+    </header>
+  <main>
+    <div class="test-container">
+      <section class="select start" id="start-test">
+        <p>診断を始める</p>
+      </section>
+
+      <section class="question q-alone invisible" id="alone">
+        <div class="alone" >
+          <h2>お一人様専用コースに進みますか？</h2>
+        </div>
+        <p>
+          お一人様コースを選択すると、一人で行きづらいお店を除外して診断ができます。
+        </p>
+        <div class="select-btn">
+          <p role="button" class="select" id="aloneYes">YES</p>
+          <p role="button" class="select"id="aloneNo">NO</p>
+        </div>
+      </section>
+
+      <section class="question q-diet invisible"  id="notAlone-diet">
+        <div class="notAlone-diet">
+          <h2>ダイエット中ですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="notAlone-dietYes">YES</p>
+            <p role="button" class="select" id="notAlone-dietNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-diet invisible"  id="diet">
+        <div class="diet">
+          <h2>ダイエット中ですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="dietYes">YES</p>
+            <p role="button" class="select" id="dietNo">NO</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="question q-oily invisible" id="oily">
+        <div class="oily">
+          <h2>こってりしたものが食べたいですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="oilyYes">YES</p>
+            <p role="button" class="select" id="oilyNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-oily invisible" id="notAloneoily">
+        <div class="notAloneoily">
+          <h2>こってりしたものが食べたいですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="notAloneoilyYes">YES</p>
+            <p role="button" class="select" id="notAloneoilyNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-spicy invisible" id="spicy">
+        <div class="spicy">
+          <h2>辛いものは好きですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="spicyYes">YES</p>
+            <p role="button" class="select" id="spicyNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-sour invisible" id="sour">
+        <div class="sour">
+          <h2>酸味のあるものは好きですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="sourYes">YES</p>
+            <p role="button" class="select" id="sourNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-rice invisible" id="rice">
+        <div class="rice">
+          <h2>麺というよりお米の気分ですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="riceYes">YES</p>
+            <p role="button" class="select" id="riceNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-noodle invisible" id="noodle">
+        <div class="noodle">
+          <h2>お米というより麺の気分ですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="noodleYes">YES</p>
+            <p role="button" class="select" id="noodleNo">NO</p>
+          </div>
+        </div>
+      </section>
+      <section class="question q-overseas invisible" id="overseas">
+        <div class="overseas">
+          <h2>洋食の気分ですか？</h2>
+          <div class="select-btn">
+            <p role="button" class="select" id="overseasYes">YES</p>
+            <p role="button" class="select" id="overseasNo">NO</p>
+          </div>
+        </div>
+      </section>
+
+      <article class="famires invisible" id="famires">
+        <h2>あなたへのおすすめは<span class="strong">ファミレス</span>
+        </h2>
+        <img src="img\building_food_family_restaurant.png" alt="ファミリーレストラン">
+        <p>バラエティー豊富なメニューが揃ってます。最近はダイエッターにうれしいメニューもありますよね。</p>
+      </article>
+      <article class="home invisible" id="home">
+        <h2><span class="strong">お家で食べてください。</span>
+        </h2>
+        <img src="img\house_1f.png" alt="stayhome">
+        <p>ダイエット中はお家で野菜とタンパク質を摂取しましょう。</p>
+      </article>
+      <article class="ramen invisible" id="ramen">
+        <h2>あなたへのおすすめは<span class="strong">ラーメン</span>
+        </h2>
+        <img src="img\ramen_top_syouyu.png" alt="ラーメン">
+        <p>あなたは何味のラーメンがすきですか？
+        今まで行ったことないラーメン屋さんを開拓してみましょう！</p>
+      </article>
+      <article class="sushi invisible" id="sushi">
+        <h2>あなたへのおすすめは<span class="strong">お寿司</span>
+        </h2>
+        <img src="img\sushi.jpg" alt="寿司">
+        <p>好きなネタを好きな量だけ食べられるのがうれしいですよね。
+        今日はいつもと違うネタに挑戦してみませんか？
+        </p>
+      </article>
+      <article class="udon invisible" id="udon">
+        <h2>あなたへのおすすめは<span class="strong">うどん</span>
+        </h2>
+        <img src="img\food_udon_kake.png" alt="うどん">
+        <p>やさしいおつゆでほっとしましょう。
+        </p>
+      </article>
+      <article class="chinese invisible" id="chinese">
+        <h2>あなたへのおすすめは<span class="strong">街中華</span>
+        </h2>
+        <img src="img\chuka_ryouriya.png" alt="街中華">
+        <p>安くてボリューミー！
+        野菜もたくさん摂れてヘルシー！
+        </p>
+      </article>
+      <article class="curry invisible" id="curry">
+        <h2>あなたへのおすすめは<span class="strong">カレー</span>
+        </h2>
+        <img src="img\curry_shop_building.png" alt="カレー">
+        <p>ピリ辛スパイスがくせになる！
+        世界で最も完成された食事！
+        </p>
+      </article>
+      <article class="pasta invisible" id="pasta">
+        <h2>あなたへのおすすめは<span class="strong">パスタ</span>
+        </h2>
+        <img src="img\food_spaghetti.png" alt="パスタ">
+        <p>
+          パスタはおいしいだけでなく、
+          パスタにはビタミンB１、B２が豊富に含まれていて新陳代謝を上げることが期待できます！
+        </p>
+      </article>
+      <article class="don invisible" id="don">
+        <h2>あなたへのおすすめは<span class="strong">丼ぶり</span>
+        </h2>
+        <img src="img/food_gyudon.png" alt="丼ぶり">
+        <p>
+          早い！美味い！安い！これぞ庶民の味方！
+        </p>
+      </article>
+
+      
+        
+      <div class="restart"><a href="" target="">はじめからやり直す</a></div>
+    
+      
+      
+    </div>
+
+
+
+  </main>
+  <footer></footer>
+  <script src="js/main.js"></script>
+  <script src="js/test.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

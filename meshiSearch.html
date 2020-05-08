@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日のご飯診断||レストラン検索</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/search.min.css">
+  
+</head>
+
+<body>
+  <header>
+    <ul class="menu-bar" id="menu-btn">
+      <li class="bar top"></li>
+      <li class="bar mid"></li>
+      <li class="bar bot"></li>
+    </ul>
+    
+      <div class="header-container">
+        <div class="logo">
+          <h1 aria-label="今日のご飯診断"><a href="index.html"><img src="img/logomoji.png" alt="今日のご飯診断" width="90px"></a></h1>
+        </div>
+  
+        <nav>
+          <ul>
+            <li><a href="test.html">今日のご飯を診断で決める</a></li>
+            <li><a href="meshiSearch.html">近くのお店を検索</a></li>
+          </ul>
+        </nav>
+  
+      </div>
+      
+      <div class="black-cover" id="cover"></div>
+  </header>
+  <main>
+    <section class="search-section">
+      <h2>診断結果のお店を周辺で探す</h2>
+      <form name='mainform' method = 'GET'>
+        <h3>診断結果を選択</h3>
+        <select id = 'freeWord'>
+          <option value=''>選択してください</option>
+          <option value='うどん'>うどん</option>
+          <option value='ラーメン'>ラーメン</option>
+          <option value='丼'>丼ぶり</option>
+          <option value='寿司'>寿司</option>
+          <option value='カレー'>カレー</option>
+          <option value='中華'>街中華</option>
+          <option value='ファミレス'>ファミレス</option>
+          <option value='パスタ'>パスタ</option>
+        </select><br>
+        
+        <div class="small-6 large-4 columns">
+          <a class="search-btn select" onclick="gnaviSearch()">検索</a></div>
+        </div>
+      </form>
+    </section>
+    
+    <!--検索結果 -->
+    <div id = 'shops' class="grid-view"></div>
+    <a href="https://api.gnavi.co.jp/api/scope/" target="_blank">
+
+
+      <img src="https://api.gnavi.co.jp/api/img/credit/api_265_65.gif" width="265" height="65" border="0" alt="グルメ情報検索サイト　ぐるなび" class="gnaviAdd">
+      </a>
+  </main>
+  <footer>
+ 
+  </footer>
+
+
+  
+
+
+
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
