@@ -16,7 +16,7 @@
         console.log(lat);//確認用
         //位置情報の取得以上
         const range = 5;
-        const keyid = 'e4ea6385936d9a30bbda66f4be7cc3fd'; // gitにapikeyを上げないよう要注意
+        const keyid = 'your key_id'; // gitにapikeyを上げないよう要注意
         let freeWord = document.forms.mainform.elements['freeWord'].value;
         //診断結果を取得
         console.log(freeWord);//確認用
