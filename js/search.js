@@ -16,13 +16,12 @@
         console.log(lat);//確認用
         //位置情報の取得以上
         const range = 5;
-        const keyid = 'YOUR_KEY_ID'; // gitにapikeyを上げないよう要注意
-        let freeWord = document.forms.mainform.elements['freeWord'].value;
+        const keyid = 'e4ea6385936d9a30bbda66f4be7cc3fd'; // gitにapikeyを上げないよう要注意
+        let category = document.forms.mainform.elements['category'].value;
         //診断結果を取得
-        console.log(freeWord);//確認用
+        console.log(category);//確認用
     
-       
-        let _url = `https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=${keyid}&latitude=${lat}&longitude=${lon}&freeword=${freeWord}&range=${range}`;
+        let _url = `https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=${keyid}&latitude=${lat}&longitude=${lon}&category_s=${category}&range=${range}`;
     
     
       // Ajax(XMLHttpRequest)処理
